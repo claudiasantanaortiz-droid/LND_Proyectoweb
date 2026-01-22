@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cuby Movie</title>
+
+ 
+  <link rel="stylesheet" href="css_Proyecto.css">
+
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+
+  
+  <header>
+    <nav class="nav">
+      <h1 class="logo">Cuby Movie</h1>
+      <ul class="menu">
+        <li><a href="#">Inicio</a></li>
+        <li><a href="#">Películas</a></li>
+        <li><a href="#">Géneros</a></li>
+        <li><a href="#">Mi Tipo</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  
+  <section class="hero">
+    <video autoplay muted loop>
+      <source src="video/cine.mp4" type="video/mp4">
+    </video>
+    <div class="hero-text">
+      <h2>No todas las películas son para todo el mundo</h2>
+      <p>Descubre películas según tus gustos</p>
+    </div>
+  </section>
+
+  
+  <section class="gustos">
+    <h2>Elige tu tipo de cine</h2>
+    <div class="botones">
+      <button onclick="filtrar('accion')">Acción</button>
+      <button onclick="filtrar('comedia')">Comedia</button>
+      <button onclick="filtrar('terror')">Terror</button>
+    </div>
+  </section>
+
+  
+  <section class="galeria">
+    <article class="pelicula accion">
+      <img src="img/peli1.jpg" alt="Película de acción">
+      <h3>Película Acción</h3>
+      <p>⭐⭐⭐⭐☆</p>
+    </article>
+
+    <article class="pelicula comedia">
+      <img src="img/peli2.jpg" alt="Película de comedia">
+      <h3>Película Comedia</h3>
+      <p>⭐⭐⭐☆☆</p>
+    </article>
+
+    <article class="pelicula terror">
+      <img src="img/peli3.jpg" alt="Película de terror">
+      <h3>Película Terror</h3>
+      <p>⭐⭐⭐⭐☆</p>
+    </article>
+  </section>
+
+  
+  <footer>
+    <p>Proyecto Lenguaje de Marcas</p>
+    <p>Alumno: Claudia Santana Ortiz</p>
+    <div class="icons">
+      <i class="fa-brands fa-instagram"></i>
+      <i class="fa-brands fa-twitter"></i>
+    </div>
+  </footer>
+
+  <!-- JS -->
+  <script src="js/script.js"></script>
+</body>
+</html>
