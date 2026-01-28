@@ -40,6 +40,9 @@ body {
   left: 10%;
 }
 
+.myVideo{
+
+}
 
 .gustos {
   padding: 40px;
@@ -64,15 +67,19 @@ body {
   padding: 10px;
 }
 
-footer p {
-  float: left;
-  padding: 20px;
+
+footer {
+  display: flex;
+  justify-content: space-evenly;
 }
 
-footer div {
-  float: right;
-  padding: 20px;
+.icons {
+  text-align: center;
+  justify-content: space-evenly;
+  font-size: 28px;
+  text-decoration: none;
 }
+
 
 
 @media (max-width: 600px) {
