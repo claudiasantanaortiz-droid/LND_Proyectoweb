@@ -121,14 +121,64 @@ body {
   padding: 2px 16px;
 }
 
-.Destacados {
+.destacadas {
+  display: flex;
+  gap: 30px;
+  padding: 40px;
+}
+
+.destacada-principal {
+  width: 30%;
+}
+
+.destacada-principal button {
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+.destacadas-galeria {
+  display: flex;
+  gap: 20px;
+  width: 70%;
+}
+
+.card {
+  background-color: #1c1c1c;
+  padding: 10px;
+  text-align: center;
+  transition: transform 0.3s;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+.card img {
   width: 100%;
+}
+
+.info {
+  padding: 40px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+th, td {
+  border: 1px solid #444;
+  padding: 10px;
   text-align: center;
 }
 
-.Info {
- width: 100%;
- text-align: center;
+thead {
+  background-color: #222;
+}
+
+tfoot {
+  background-color: #111;
 }
 
 
@@ -145,6 +195,27 @@ footer {
   text-decoration: none;
 }
 
+.cuestionario {
+  padding: 40px;
+  max-width: 600px;
+  margin: auto;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+label {
+  display: flex;
+  flex-direction: column;
+}
+
+button {
+  padding: 10px;
+  cursor: pointer;
+}
 
 
 @media (max-width: 600px) {
