@@ -5,9 +5,9 @@
   <meta name="viewport" content="width=responsive-web, peliculas">
   <title>Cuby Movie</title>
 
-  <link rel="stylesheet" href="css/css_Proyecto.css">
+  <link rel="stylesheet" href="../css/css_Proyecto.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
+  <link el="stylesheet"  href="../javascrip/java.js">
 
 </head>
 <body>
@@ -31,7 +31,7 @@
   <section class="hero">
     <div class="content">
      <video autoplay muted loop id="myVideo">
-      <source src="pelis_video/carrera.mp4" type="video/mp4">
+      <source src="../pelis_video/carrera.mp4" type="video/mp4">
      </video>
     </div>
     <div class="hero-text">
@@ -54,16 +54,51 @@
     </div>
   </section>
 
-  
+  <section class="blog-cine">
+  <h2>Cine Blogs</h2>
+
+  <div class="blog-grid">
+
+    <article class="blog-principal">
+      <img src="../pelis_video/mariobros.jpg" alt="Super Mario">
+      <div class="blog-info">
+        <h3>The Super Mario Bros Movie 2023</h3>
+        <p>Los famosos fontaneros de Brooklyn dan su salto a la gran pantalla en Super Mario Bros. La película, una vibrante y apasionante aventura cargada de acción y humor. Mario y su inseparable hermano Luigi viajarán hasta un mundo mágico mientras trabajan en una avería subterránea que ha inundado la ciudad.</p>
+        <span>06 June 2023</span>
+      </div>
+    </article>
+
+    <article class="blog-card">
+      <img src="../pelis_video/spiderman.jpg">
+      <h4>Spider-Man: Across the Spider-Verse</h4>
+      <p>Miles Morales conoce a un nuevo equipo de Spider-People formado por héroes de diferentes dimensiones. Pero cuando los héroes se enfrentan sobre cómo hacer frente a una nueva amenaza, Miles se encuentra en una encrucijada.</p>
+    </article>
+
+    <article class="blog-card">
+      <img src="../pelis_video/Fast and Furious.webp">
+      <h4>Fast X</h4>
+      <p>Durante numerosas misiones más que imposibles, Dom Toretto y su familia han sido capaces de ser más listos, de tener más valor y de ir más rápido que cualquier enemigo que se cruzara con ellos. Pero ahora tendrán que enfrentarse al oponente más letal que jamás hayan conocido: Un terrible peligro que resurge del pasado</p>
+    </article>
+
+    <article class="blog-card">
+      <img src="../pelis_video/Guardianes_de_la_galaxia_Vol_3.jpg">
+      <h4>Guardians of the Galaxy Vol. 3</h4>
+      <p>Peter Quill reúne a su equipo para defender el universo y a uno de los suyos, una misión que podría significar el fin de los Guardianes si no tienen éxito.</p>
+    </article>
+
+  </div>
+  </section>
+
+  <h2 class="Tarjeta">Cartelera</h2>
   <section class="galeria">
-    <h2>Cartelera</h2>
       <div class= "flip-box">
         <div class="flip-box-inner">
           <div class="pelicula accion">
             <h3>Película Acción</h3>
-            <img src="pelis_video\Captura de pantalla 2026-01-15 085831.png" alt="Avatar">
+            <img src="../pelis_video/Captura de pantalla 2026-01-15 085831.png" alt="Avatar">
           </div>
           <div class="container">
+            <h3>Avatar</h3>
             <p>⭐⭐⭐☆☆</p>
             <button onclick="filtrar('trailer')">Ver Tráiler</button>
           </div>
@@ -74,9 +109,10 @@
         <div class="flip-box-inner">
           <div class="pelicula comedia">
             <h3>Película Comedia</h3>
-            <img src="pelis_video\Captura de pantalla 2026-01-15 083444.png" alt="Desconocidos">
+            <img src="../pelis_video/Captura de pantalla 2026-01-15 083444.png" alt="Desconocidos">
           </div>
           <div class="container">
+            <h3>Perfectos Desconocidos</h3>
             <p>⭐⭐⭐⭐☆</p>
             <button onclick="filtrar('trailer')">Ver Tráiler</button>
           </div> 
@@ -87,9 +123,10 @@
         <div class="flip-box-inner">
           <div class="pelicula terror">
             <h3>Película Terror</h3>
-            <img src="pelis_video\Captura de pantalla 2026-01-15 090447.png" alt="Time">
+            <img src="../pelis_video/Captura de pantalla 2026-01-15 090447.png" alt="Time">
           </div>
           <div class="container">
+            <h3>Time</h3>
             <p>⭐⭐⭐⭐⭐</p>
             <button onclick="filtrar('trailer')">Ver Tráiler</button>
           </div>
@@ -108,29 +145,29 @@
 
   <div class="destacadas-galeria">
     <article class="card">
-      <img src="pelis_video/Captura de pantalla 2026-01-15 082559.png" alt="Película destacada 1">
-      <h3>Película AA</h3>
+      <img src="../pelis_video/Captura de pantalla 2026-01-15 082559.png" alt="Película destacada 1">
+      <h3>La Sociedad de la Nieve</h3>
       <p>⭐⭐⭐⭐☆</p>
       <button>Ver trailer</button>
     </article>
 
     <article class="card">
-      <img src="pelis_video/Captura de pantalla 2026-01-15 090104.png" alt="Película destacada 2">
-      <h3>Película AA</h3>
+      <img src="../pelis_video/Captura de pantalla 2026-01-15 090104.png" alt="Película destacada 2">
+      <h3>Attack on Titan</h3>
       <p>⭐⭐⭐⭐☆</p>
       <button>Ver trailer</button>
     </article>
 
     <article class="card">
-      <img src="pelis_video/Captura de pantalla 2026-01-15 084606.png" alt="Película destacada 3">
-      <h3>Película AA</h3>
+      <img src="../pelis_video/Captura de pantalla 2026-01-15 084606.png" alt="Película destacada 3">
+      <h3>El Señor de los Anillos</h3>
       <p>⭐⭐⭐☆☆</p>
       <button>Ver trailer</button>
     </article>
 
     <article class="card">
-      <img src="pelis_video/Captura de pantalla 2026-01-15 085533.png" alt="Película destacada 4">
-      <h3>Película AA</h3>
+      <img src="../pelis_video/Captura de pantalla 2026-01-15 085533.png" alt="Película destacada 4">
+      <h3>Deadpool&Wolverine</h3>
       <p>⭐⭐⭐⭐☆</p>
       <button>Ver trailer</button>
     </article>
@@ -152,16 +189,16 @@
 
     <tbody>
       <tr>
-        <td>Película</td>
+        <td>Matrix</td>
         <td>Acción</td>
-        <td>120 min</td>
+        <td>2 horas 16 min</td>
         <td>⭐⭐⭐⭐☆</td>
       </tr>
 
       <tr>
-        <td>Película</td>
+        <td>Interstellar</td>
         <td>Drama</td>
-        <td>135 min</td>
+        <td>2 horas 49 min</td>
         <td>⭐⭐⭐☆☆</td>
       </tr>
     </tbody>

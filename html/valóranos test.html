@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <title>Valóranos | Cuby Movie</title>
-  <link rel="stylesheet" href="css/css_Proyecto.css">
+  <link rel="stylesheet" href="../css/css_Proyecto.css">
 </head>
 
 <body>
@@ -21,7 +21,8 @@
     <form>
       <label>
         Género favorito:
-        <select>
+        <select required>
+          <option value="">Selecciona una opción</option>
           <option>Acción</option>
           <option>Aventura/Fantasía</option>
           <option>Animación</option>
@@ -36,11 +37,13 @@
       <label>
         ¿Te gustan las películas largas?
       </label>
-        <input type="checkbox"> Sí
-        <input type="checkbox"> No
-      <label>
+      <div class="radio-group">
+          <label><input type="radio" name="duracion"> Sí</label>
+          <label><input type="radio" name="duracion"> No</label>
+      </div>
         ¿Cuál es tu tiempo ideal de duración para una película?
-        <select>
+        <select required>
+          <option value="">Selecciona duración</option>
           <option>Menos de 1 hora</option>
           <option>De 1 hora a 1 hora y media</option>
           <option>Entre 1 hora y media a 2 horas</option>
@@ -81,7 +84,9 @@
         </select>
       </label>
 
-      <button type="submit">Enviar</button>
+      <button type="submit" class="btn-enviar">
+        Obtener recomendaciones
+      </button>
     </form>
   </section>
 </div>

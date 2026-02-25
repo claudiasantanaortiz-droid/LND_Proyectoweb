@@ -58,7 +58,66 @@ body {
   cursor: pointer;
 }
 
-.galeria h2 {
+button {
+  background-color: #6222d2;
+  color: white;
+  border: none;
+  border-radius: 8px;
+}
+
+button:hover {
+  background-color: #371868;
+}
+
+.blog-cine {
+  padding: 20px;
+  background-color: #0f0f0f;
+}
+
+.blog-cine h2 {
+  margin-bottom: 30px;
+  font-size: 28px;
+}
+
+.blog-grid {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr;
+  gap: 20px;
+}
+
+.blog-principal {
+  grid-row: span 2;
+  background: #1c1c1c;
+  border-radius: 15px;
+  overflow: hidden;
+  transition: 0.3s;
+}
+
+.blog-principal img {
+  width: 100%;
+  height: 70%;
+  object-fit: cover;
+}
+
+.blog-card {
+  background: #1c1c1c;
+  border-radius: 15px;
+  overflow: hidden;
+  transition: 0.3s;
+}
+
+.blog-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.blog-card:hover,
+.blog-principal:hover {
+  transform: scale(1.03);
+}
+
+.Tarjeta {
  width: 100%;
  text-align: center;
 }
@@ -71,6 +130,7 @@ body {
 .galeria {
   text-align: center;
   gap: 20px;
+  display: flex;
 }
 
 .pelicula {
@@ -120,40 +180,42 @@ body {
 }
 
 .container {
-  background-color: grey;
+  background-color: #222;
   color: white;
   transform: rotateY(180deg);
   flex-direction: column;
 }
 
 .pelicula.accion {
-  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  box-shadow: 0 4px 8px 0 black;
   transition: 0.3s;
-  display: flex; flex-direction: column;
+  display: flex; 
+  flex-direction: column;
 }
 
 .pelicula.accion:hover {
-  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  box-shadow: 0 8px 16px 0 black;
 }
 
 .pelicula.comedia {
-  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  box-shadow: 0 4px 8px 0 black;
   transition: 0.3s;
-  display: flex; flex-direction: column;
+  display: flex; 
+  flex-direction: column;
 }
 
 .pelicula.comedia:hover {
-  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  box-shadow: 0 8px 16px 0 black;
 }
 
 .pelicula.terror {
-  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  box-shadow: 0 4px 8px 0 black;
   transition: 0.3s;
   display: flex; flex-direction: column;
 }
 
 .pelicula.terror:hover {
- box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+ box-shadow: 0 8px 16px 0 black;
 }
 
 .destacadas {
@@ -303,5 +365,3 @@ button {
   }
 
 }
-
-
