@@ -72,6 +72,7 @@ button:hover {
 .blog-cine {
   padding: 20px;
   background-color: #0f0f0f;
+  margin-top: 1%;
 }
 
 .blog-cine h2 {
@@ -120,6 +121,7 @@ button:hover {
 .Tarjeta {
  width: 100%;
  text-align: center;
+ margin-top: 8%;
 }
 
 .galeria div {
@@ -131,6 +133,7 @@ button:hover {
   text-align: center;
   gap: 20px;
   display: flex;
+  justify-content: space-around;
 }
 
 .pelicula {
@@ -222,6 +225,7 @@ button:hover {
   display: flex;
   gap: 30px;
   padding: 40px;
+  margin-top: 8%;
 }
 
 .destacada-principal {
@@ -343,6 +347,7 @@ button {
   
   .galeria {
     flex-direction: column;
+    justify-content: space-around;
   }
 
   footer {
@@ -361,7 +366,7 @@ button {
   
   .galeria {
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: space-around;
   }
 
 }
