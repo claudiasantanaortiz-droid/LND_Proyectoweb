@@ -3,13 +3,13 @@
   <channel>
 
     <title>Cuby Movie</title>
-    <link>https://Claudiasantanaortiz-droid.github.io/LND_Proyectoweb/</link>
+    <link>https://Claudiasantanaortiz-droid.github.io/LND_Proyectoweb/xml/rss.xml</link>
     <description>Últimas películas y recomendaciones de Cuby Movie</description>
     <language>es-es</language>
 
     <item>
       <title>Película de Acción Destacada</title>
-      <link>https://Claudiasantanaortiz-droid.github.io/LND_Proyectoweb/</link>
+      <link>https://Claudiasantanaortiz-droid.github.io/LND_Proyectoweb/xml/rss.xml</link>
       <description>Descubre nuestra última película de acción recomendada.</description>
       <pubDate>Mon, 04 Mar 2026 10:00:00 +0100</pubDate>
     </item>
