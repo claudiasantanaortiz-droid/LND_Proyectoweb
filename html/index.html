@@ -8,20 +8,20 @@
   <link rel="stylesheet" href="../css/css_Proyecto.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <script src="../javascrip/java.js"></script>
-
+  <link rel="alternate" type="application/rss+xml" title="Cuby Movie RSS" href="rss.xml">
+  
 </head>
 <body>
-
   
   <header>
     <nav class="nav">
       <h1 class="logo">🎬Cuby Movie</h1>
       <ul class="menu">
-        <li><a href="#">Inicio</a></li>
-        <li><a href="#">Películas</a></li>
-        <li><a href="#">Géneros</a></li>
-        <li><a href="#">Mi Tipo</a></li>
-        <li><a href="#">Contacto</a></li>        
+        <li><a href="#A1">Inicio</a></li>
+        <li><a href="#A3">Películas</a></li>
+        <li><a href="#A2">Géneros</a></li>
+        <li><a href="#A4">Recomendaciones</a></li>
+        <li><a href="#A5">Contacto</a></li>        
         <li><a href="valóranos test.html">Valóranos</a></li>
       </ul>
     </nav>
@@ -29,7 +29,7 @@
 
   
   <section class="hero">
-    <div class="content">
+    <div id="A1" class="content">
      <video autoplay muted loop id="myVideo">
       <source src="../pelis_video/carrera.mp4" type="video/mp4">
      </video>
@@ -42,31 +42,33 @@
 
   
   <section class="gustos">
-    <h2>Elige tu tipo de cine</h2>
+    <h2 id="A2">Elige tu tipo de cine</h2>
     <div class="botones">
       <button onclick="filtrar('todas')">Todas</button>
       <button onclick="filtrar('accion')">Acción</button>
       <button onclick="filtrar('comedia')">Comedia</button>
-      <button onclick="filtrar('terror | misterio')">Terror | Misterio</button>
+      <button onclick="filtrar('terror-misterio')">Terror-Misterio</button>
       <button onclick="filtrar('drama')">Drama</button>
-      <button onclick="filtrar('ciencia ficción')">Ciencia Ficción</button>
+      <button onclick="filtrar('ciencia-ficción')">Ciencia-Ficción</button>
       <button onclick="filtrar('animación')">Animación</button>
-      <button onclick="filtrar('aventura | fantasía')">Aventura | Fantasía</button>
+      <button onclick="filtrar('aventura-fantasía')">Aventura-Fantasía</button>
     </div>
   </section>
 
-  <h2 class="Tarjeta">Cartelera</h2>
+  <h2 id="A3" class="Tarjeta">Cartelera</h2>
   <section class="galeria">
       <div class= "flip-box">
         <div class="flip-box-inner">
-          <div class="pelicula comedia">
+          <div class="pelicula accion">
             <h3>Película Acción</h3>
             <img src="../pelis_video/Captura de pantalla 2026-01-15 085831.png" alt="Avatar">
           </div>
           <div class="container">
             <h3>Avatar</h3>
             <p>⭐⭐⭐☆☆</p>
-            <button onclick="filtrar('trailer')">Ver Tráiler</button>
+            <a href="https://www.youtube.com/watch?v=AZS_d_hS2dM" target="_blank">
+              <button>Ver Tráiler</button>
+            </a>
           </div>
         </div>
       </div>
@@ -80,28 +82,96 @@
           <div class="container">
             <h3>Perfectos Desconocidos</h3>
             <p>⭐⭐⭐⭐☆</p>
-            <button onclick="filtrar('trailer')">Ver Tráiler</button>
+            <a href="https://www.youtube.com/watch?v=8V11aiYk3wE" target="_blank">
+              <button>Ver Tráiler</button>
+            </a>
           </div> 
         </div>
       </div>
 
       <div class= "flip-box">
         <div class="flip-box-inner">
-          <div class="pelicula terror">
-            <h3>Película Terror</h3>
+          <div class="pelicula terror-misterio">
+            <h3>Película Terror-Misterio</h3>
             <img src="../pelis_video/Captura de pantalla 2026-01-15 090447.png" alt="Time">
           </div>
           <div class="container">
             <h3>Time</h3>
             <p>⭐⭐⭐⭐⭐</p>
-            <button onclick="filtrar('trailer')">Ver Tráiler</button>
+            <a href="https://www.youtube.com/watch?v=Ima90tizol8" target="_blank">
+              <button>Ver Tráiler</button>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class= "flip-box">
+        <div class="flip-box-inner">
+          <div class="pelicula drama">
+            <h3>Película Drama</h3>
+            <img src="../pelis_video/Late shift.jpg" alt="Turno de Noche">
+          </div>
+          <div class="container">
+            <h3>Turno de Noche</h3>
+            <p>⭐⭐⭐⭐⭐</p>
+            <a href="https://www.youtube.com/watch?v=ijWLK4rcsWU" target="_blank">
+              <button>Ver Tráiler</button>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class= "flip-box">
+        <div class="flip-box-inner">
+          <div class="pelicula ciencia-ficción">
+            <h3>Película Ciencia-Ficción</h3>
+            <img src="../pelis_video/el-proyecto-adam-7.jpg" alt="Proyecto Adam">
+          </div>
+          <div class="container">
+            <h3>Proyecto Adam</h3>
+            <p>⭐⭐⭐⭐⭐</p>
+            <a href="https://www.youtube.com/watch?v=AxQXlXpiHBg" target="_blank">
+              <button>Ver Tráiler</button>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class= "flip-box">
+        <div class="flip-box-inner">
+          <div class="pelicula animación">
+            <h3>Película Animación</h3>
+            <img src="../pelis_video/coco.jpeg" alt="Coco">
+          </div>
+          <div class="container">
+            <h3>Coco</h3>
+            <p>⭐⭐⭐⭐⭐</p>
+            <a href="https://www.youtube.com/watch?v=arWQtaoQYK0" target="_blank">
+              <button>Ver Tráiler</button>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class= "flip-box">
+        <div class="flip-box-inner">
+          <div class="pelicula aventura-fantasía">
+            <h3>Película Aventura-Fantasía</h3>
+            <img src="../pelis_video/Piratas_del_Caribe.jpg" alt="Piratas del Caribe">
+          </div>
+          <div class="container">
+            <h3>Piratas del Caribe</h3>
+            <p>⭐⭐⭐⭐⭐</p>
+            <a href="https://www.youtube.com/watch?v=5Itr2jHuJaw" target="_blank">
+              <button>Ver Tráiler</button>
+            </a>
           </div>
         </div>
       </div>
   </section>
 
   <section class="blog-cine">
-  <h2>Cine Blogs</h2>
+  <h2 id="A4">Cine Blogs</h2>
 
   <div class="blog-grid">
 
@@ -141,7 +211,9 @@
     <p>
       Una película recomendada por su historia, dirección y valoración general.
     </p>
-    <button>Ver más</button>
+    <a href="#A6">
+      <button>Ver más</button>
+    </a>
   </div>
 
   <div class="destacadas-galeria">
@@ -149,34 +221,42 @@
       <img src="../pelis_video/Captura de pantalla 2026-01-15 082559.png" alt="Película destacada 1">
       <h3>La Sociedad de la Nieve</h3>
       <p>⭐⭐⭐⭐☆</p>
-      <button>Ver trailer</button>
+      <a href="https://www.youtube.com/watch?v=XKM6LZGZVtI" target="_blank">
+        <button>Ver Tráiler</button>
+      </a>
     </article>
 
     <article class="card">
       <img src="../pelis_video/Captura de pantalla 2026-01-15 090104.png" alt="Película destacada 2">
       <h3>Attack on Titan</h3>
       <p>⭐⭐⭐⭐☆</p>
-      <button>Ver trailer</button>
+      <a href="https://www.youtube.com/watch?v=MiKxN0Ne4Ms" target="_blank">
+        <button>Ver Tráiler</button>
+      </a>
     </article>
 
     <article class="card">
       <img src="../pelis_video/Captura de pantalla 2026-01-15 084606.png" alt="Película destacada 3">
       <h3>El Señor de los Anillos</h3>
       <p>⭐⭐⭐☆☆</p>
-      <button>Ver trailer</button>
+      <a href="https://www.youtube.com/watch?v=3GJp6p_mgPo" target="_blank">
+        <button>Ver Tráiler</button>
+      </a>
     </article>
 
     <article class="card">
       <img src="../pelis_video/Captura de pantalla 2026-01-15 085533.png" alt="Película destacada 4">
       <h3>Deadpool&Wolverine</h3>
       <p>⭐⭐⭐⭐☆</p>
-      <button>Ver trailer</button>
+      <a href="https://www.youtube.com/watch?v=tTM5weeCFvQ" target="_blank">
+        <button>Ver Tráiler</button>
+      </a>
     </article>
   </div>
 </section>
 
   <section class="info">
-  <h2>Información y comparación</h2>
+  <h2 id="A6">Información y comparación</h2>
 
   <table>
     <thead>
@@ -219,9 +299,12 @@
     <div>
       <p>Alumno: Claudia Santana Ortiz</p>
     </div>
-    <div class="icons">
+    <div id="A5" class="icons">
       <i class="fa fa-instagram"></i>
       <i class="fa fa-twitter"></i>
+      <a href="rss.xml" target="_blank">
+        <i class="fa fa-rss"></i>
+      </a>
     </div>
   </footer>
   

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0">
+  <channel>
+
+    <title>Cuby Movie</title>
+    <link>https://Claudiasantanaortiz-droid.github.io/LND_Proyectoweb/</link>
+    <description>Últimas películas y recomendaciones de Cuby Movie</description>
+    <language>es-es</language>
+
+    <item>
+      <title>Película de Acción Destacada</title>
+      <link>https://Claudiasantanaortiz-droid.github.io/LND_Proyectoweb/</link>
+      <description>Descubre nuestra última película de acción recomendada.</description>
+      <pubDate>Mon, 04 Mar 2026 10:00:00 +0100</pubDate>
+    </item>
+
+    <item>
+      <title>Película de Terror Recién Añadida</title>
+      <link>http://tusitio.com/index.html</link>
+      <description>Una nueva experiencia de miedo llega a nuestra cartelera.</description>
+      <pubDate>Mon, 04 Mar 2026 12:00:00 +0100</pubDate>
+    </item>
+
+  </channel>
+</rss>
